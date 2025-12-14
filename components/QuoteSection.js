@@ -6,7 +6,6 @@ export default function QuoteSection() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Fetching a random inspirational quote
     fetch('https://dummyjson.com/quotes/random')
       .then((res) => res.json())
       .then((data) => {
